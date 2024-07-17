@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./list_alt_FILL0_wght400_GRAD0_opsz24.svg">
+    <title>todolist</title>
+</head>
+<body>
+    <header>
+        <h1>
+            TODO APP
+        </h1>
+        <div class="input-task">
+            <input type="text" id="input-task" placeholder="Enter a task...">
+            <input type="date" id="input-date">
+            <center>
+                <button id="but-add">add</button>
+            </center>
+            <center>
+                <button id="but-edit">edit</button>
+            </center>
+                </div>
+                <div class="but-action">
+                    <div class="buts-filter">
+                        <button class="button button-filter">all</button>
+                        <button class="button button-filter">done</button>
+                        <button class="button button-filter">undo</button>
+                    </div>
+                    <button id="but-deleteall" class="button">delete all</button>
+                </div>
+    </header>
+    <div class="alert" id="alert">
+
+    </div>
+   <main>
+    <table>
+        <thead>
+            <tr>
+                <td>tesk</td>
+                <td>date</td>
+                <td>Condition</td>
+                <td>action</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+   </main>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@font-face {
+   font-family: 'vazirmatn';
+   src: url("./Vazirmatn-Regular.woff2") format("woff2");
+}
+:root
+{
+    --color-primary: #f9d72f;
+    --color-background: #e6e6e6;
+    --color-tesk: #f7f7f7;
+    --color-success: #36d39a;
+    --color-warning: #fbbe23;
+    --color-error: #f87171;
+}
+
+ *
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'vazirmatn';
+ }
+body
+{
+    max-width: 1100px;
+    margin: auto;
+}
+ header
+ {
+    width: 100%;
+    margin: 20px auto 40px ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+
+ header h1
+ {
+   font-size: 2.5rem;
+    color: var(--color-success);
+ }
+ .input-task
+ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+ }
+ .input-task input
+ {
+   padding: 5px;
+    width: 46%;
+    border: 1.7px solid var(--color-primary);
+    height:60px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+ }
+
+ #but-add
+ {
+    background-color: var(--color-primary);
+    border: none;
+    width: 70px;
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 5px;
+    transition: all 0.3s ;
+
+ }
+ .button
+ {
+    background-color: var(--color-primary);
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 5px;
+    transition: all 0.3s ;
+
+ }
+ #but-add:hover
+ {opacity :0.5; }
+ .button:hover
+ {opacity :0.5; }
+ .input-task input:focus
+ {
+    border: 5px solid var(--color-primary);
+ }
+ .but-action
+ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+#but-deleteall
+{
+    background-color: var(--color-error);
+    width: 120px;
+}
+
+table
+{
+width: 100%;
+
+}
+thead
+{
+    background-color: var(--color-background);
+    text-align: center;
+}
+thead td
+{
+    padding: 10px;
+}
+
+thead td:first-child
+{ border-top-left-radius: 10px;
+}
+thead td:last-child
+{
+border-top-right-radius: 10px; 
+}
+tbody
+{
+    text-align: center;
+    background-color: var(--color-tesk);
+    padding: 5px 10px;
+    width: 25%;
+}
+tbody td button
+{
+    padding: 4px 8px;
+    margin: 2px 5px;
+    width: 70px;
+}
+tbody td button
+{
+   padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+tbody td button:nth-child(1)
+{
+  background-color: var(--color-primary);
+}
+tbody td button:nth-child(2)
+{
+background-color: var(--color-success);
+}
+tbody td button:nth-child(3)
+{
+   background-color: var(--color-error);
+   width: fit-content;
+}
+
+.alert
+{
+   border-radius: 10px;
+   text-align: center;
+ margin-bottom: 5px;
+width: 100%;
+}
+.alert-success{background-color: var(--color-success);}
+.alert-error{background-color: var(--color-error);}
+
+#but-edit
+{
+    background-color: var(--color-primary);
+    border: none;
+    width: 70px;
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 5px;
+    display: none;
+}
+#but-edit:hover
+{opacity :0.9;}
+
+@media (max-width:820px) {
+   *
+   {
+      font-size: 20px;
+   }
+   .input-task
+   {
+      flex-direction: column;
+      gap: 10px;
+   }
+   #but-add
+   {
+     width: 100px;
+   }
+   .buts-filter
+   {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+   }
+}
